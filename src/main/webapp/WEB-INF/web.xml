@@ -6,9 +6,6 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-  <display-name>Archetype Created Web Application</display-name>
-
-
   <!-- 编码过滤器 -->
   <filter>
     <filter-name>encodingFilter</filter-name>
@@ -18,6 +15,7 @@
       <param-value>UTF-8</param-value>
     </init-param>
   </filter>
+
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
@@ -30,19 +28,21 @@
     <!-- 配置springMVC需要加载的配置文件-->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:/config/spring/spring-*.xml</param-value>
+      <param-value>classpath:config/spring/spring-*.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
     <async-supported>true</async-supported>
   </servlet>
+
   <servlet-mapping>
     <servlet-name>SpringMVC</servlet-name>
     <!-- 匹配所有请求，此处也可以配置成 *.do 形式 -->
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <!--访问项目名 默认打开页面-->
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>/WEB-INF/views/login.jsp</welcome-file>
   </welcome-file-list>
 
 </web-app>

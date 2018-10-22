@@ -1,4 +1,4 @@
-package com.ssm.demo.entity;
+package com.ssm.demo.model;
 
 public class Person {
     private long id;

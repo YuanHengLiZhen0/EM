@@ -1,7 +1,7 @@
 package com.ssm.demo.service.impl;
 
 import com.ssm.demo.dao.PersonMapperDao;
-import com.ssm.demo.entity.Person;
+import com.ssm.demo.model.Person;
 import com.ssm.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

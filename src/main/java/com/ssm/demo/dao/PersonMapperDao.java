@@ -1,6 +1,6 @@
 package com.ssm.demo.dao;
 
-import com.ssm.demo.entity.Person;
+import com.ssm.demo.model.Person;
 import org.springframework.stereotype.Repository;
 
 @Repository
