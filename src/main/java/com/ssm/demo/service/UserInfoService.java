@@ -1,9 +1,10 @@
 package com.ssm.demo.service;
 
 import com.ssm.demo.model.UserInfo;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface UserInfoService {
     /**
      *添加用户信息
