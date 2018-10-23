@@ -5,7 +5,7 @@
 </head>
 <body>
 <div style="text-align: center;margin-top: 100px;">
-    <h1>登入成功！</h1>
+    <h1><%request.getAttribute("userInfo").toString();%>登入成功！</h1>
 </div>
 </body>
 </html>

@@ -1,15 +1,16 @@
 package com.ssm.demo.dao;
 
 import com.ssm.demo.model.UserInfo;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 public interface UserInfoDao {
     /**
      *添加用户信息
-     * @param userInfo
+     *
      */
-    void insertUser(UserInfo userInfo);
+    void insertUser(@Param("userInfo")UserInfo userInfo);
 
     /**
      * 删除用户
